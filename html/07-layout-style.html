@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/07-layout-style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>화면 배치(표시, 형식) 지정 속성 : display</h1>
+
+  <pre>
+    요소가 화면에 어떻게 표시될지 형식을 지정하는 속성 
+
+    - block : 요소를 한 줄 전체를 차지하고 독립된 박스를 형성하게 만드는 속성
+             + 높이와 너비 모두 지정 가능.
+
+    - inline : 요소를 콘텐츠 크기만큼 차지하며, 같은 줄에 나란히 배치되도록 만드는 속성입니다.
+               + 높이 지정 x, 내용에 따라 너비가 자동조정 
+
+    - inline-block : 화면/ 영역을 열로 분할(inline)
+                     + 크기 지정 o(block)
+
+    - none : 요소를 화면에서 숨김 (실제로는 존재함)
+
+    - flex : 부모 요소 안의 자식 요소들을 정렬, 배치할 수 있는 유연한 박스 모델을 제공.
+
+    - grid : 부모 요소를 행(row)과 열(column) 기반의 격자(Grid) 레이아웃으로 설정, 자식 요소를 정렬하고 배치 가능.
+  </pre>
+
+  <hr>
+
+  <h3>block 형식 요소를 inline 형식으로 변경</h3>
+  
+  <div class="box area1 inline">1번 영역</div>
+  <div class="box area2 inline">2번 영역</div>
+  <div class="box area3 inline">3번 영역</div>
+  <div class="box area4 inline">4번 영역</div>
+  <div class="box area5 inline">5번 영역</div>
+
+  <h3>inline 형식 요소를 block 형식으로 변경</h3>
+
+  <span class="box area1 block">1번 영역</span>
+  <span class="box area2 block">2번 영역</span>
+  <span class="box area3 block">3번 영역</span>
+  <span class="box area4 block">4번 영역</span>
+  <span class="box area5 block">5번 영역</span>
+
+  <h3>inline-block 형식으로 변경</h3>
+
+  <span class="box area1 inline-block">1번 영역</span>
+  <span class="box area2 inline-block">2번 영역</span>
+  <span class="box area3 inline-block">3번 영역</span>
+  <span class="box area4 inline-block">4번 영역</span>
+  <span class="box area5 inline-block">5번 영역</span>
+
+  <h3>display: none, visulbility: hidden의 차이</h3>
+
+  <span class="box area1 inline-block">1번 영역</span>
+  <!-- display : none 요소는 존재하지만 화면에 표시되지않음  -->
+  <span class="box area2 inline-block none">2번 영역</span>
+  <!-- visibility : hidden -->
+  <span class="box area3 inline-block hidden">3번 영역</span>
+  <span class="box area4 inline-block">4번 영역</span>
+  <span class="box area5 inline-block">5번 영역</span>
+
+</pre>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* 일반 구조 선택자(위치 기준) */
+
+/* :first-child -> 첫 번쨰 위치한 요소거 맞으면 선택 */
+
+#test1 > p:first-child {
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+/* :last-child -> 마지막 위치한 요소가 맞으면 선택 */
+#test1 > p:last-child {
+  background-color: rgb(0, 0, 255);
+  color: rgb(255, 255, 255);
+}
+
+/* :nth-child(n) -> n번째 위치한 요소가 맞으면 선택 */
+#test1 > p:nth-child(3) {
+ background-color: orange;
+}
+
+/* :nth-child(수열)-> n번째 위치한 요소가 맞으면 선택 */
+#test1 > p:nth-child(2n) {
+  background-color: pink;
+}
+
+/* :nth-last-child(숫자) -> 뒤에서 n번째 위치한 요소가 맞으면 선택 */
+#test1 > p:nth-last-child(4) {
+  font-size: 30px;
+}
+
+/* 형태 구조 선택자 */
+
+#test2 > p:first-of-type {
+  background-color: yellowgreen;
+}
+
+#test2 > p:last-of-type {
+  background-color: skyblue;
+}
+#test2 > p:nth-of-type(2n + 1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#test2 > p:nth-last-of-type(2) {
+  background-color: hotpink;
+}
+
+#test3 > li:not(:nth-child(3n)) {
+  background-color: pink;
+}
