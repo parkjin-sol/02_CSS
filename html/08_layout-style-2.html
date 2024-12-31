@@ -74,9 +74,45 @@
     id, name : 카멜(aaaBbb) 표기법 사용
     class 등 나머지: 하이픈(-) 표기법 사용 
   -->
+
   <div class="box border margin-1">content</div>
   <div class="box border margin-2">content</div>
 
+  <h1>padding, border, margin 원하는 방향만 설정하기</h1>
+  <pre>
+    000-top    : 위쪽   크기
+    000-bottom : 아랫쪽 크기
+    000-left   : 왼쪽   크기
+    000-right  : 오른쪽 크기 
 
+    단, border은 [크기 스타일 색상]으로 지정
+
+    <div class="box test-1">방향테스트</div>
+    
+    <hr>
+    
+  </pre>
+  <h1>padding. margin, border-width 한 번에 여러 방향 지정하기</h1>
+  <pre>
+    padding 또는 margin 또는 border-width: 크기;
+
+    크기 1개 작성 : 상하좌우 적용
+    크기 2개 작성 : 상하 / 좌우 적영
+    크기 3개 작성 : 상 / 좌우 / 하
+    크기 4개 작성 : 상 / 좌 / 하 / 우
+  </pre>
+
+  <div class="box test-2">방향테스트</div>
+
+  <h1>margin : auto;</h1>
+  <pre>
+    다른 요소와의 간격을 자동으로 설정한다. 
+    가운데 정렬하게 만드는 속성
+
+    - 기본적으로 좌/우 간격만 자동으로 조정
+
+    - inline, inline-block에는 적용이 안됨
+    
+  </pre>
 </body>
 </html>

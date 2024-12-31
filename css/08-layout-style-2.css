@@ -46,3 +46,13 @@
   .margin-2{
     margin: 100px; /* 상하좌우 다른 요소와 100px 만큼 간격 설정 */
   }
+
+  /* border 스타일 : solid(실선), dotted(...), dashed(---), 
+                     double(이중 실선), inset(음각), outset(양각) */
+
+.box.test-1 {
+    border-top: 5px dotted red;
+    border-right: 5px dashed darkblue;
+    border-bottom: 3px double black;
+    border-left: 15px outset blueviolet;
+}                 
