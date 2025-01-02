@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div, header, main, footer, section {
+    border: 1px solid #000;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+head {
+    height: 300px;
+    flex-grow: 0;
+}
+main {
+    flex-grow: 1;
+}
+footer{
+    height: 400px;
+    flex-grow: 0;
+}
+
+/* heder 영역 분할 */
+
+header {
+    display: flex;
+}
+.header-1, .header-2 {
+    width: 300px;
+}
+.header-2 {
+    /* 중심축 방향 팽창 비율 지정 */
+    flex-grow: 1; 
+}
+header > section {
+    font-size: 64px;
+    font-weight: bold;
+
+    /* flex-container로 지정 */
+    display: flex;
+    /*  중심축 방향 가운데 정렬 */
+    justify-content: center;
+    /* 교차축 방향 가운데 정렬 */
+    align-items:  center;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+main >section {
+    width: 50%;
+}
+.content-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.content-2 div{
+    height: 50%;
+}
